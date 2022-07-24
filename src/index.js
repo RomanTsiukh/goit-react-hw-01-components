@@ -13,33 +13,40 @@
 import ReactDOM from 'react-dom';
 import user from './user';
 
-const element = (
-<div class="profile">
-<div class="description">
-  <img
-    src={user.avatar}
-    alt="User avatar"
-    class="avatar"
-  />
-  <p class="name">{user.username}</p>
-  <p class="tag">@{user.tag}</p>
-  <p class="location">{user.location}</p>
-</div>
+function Used(props) {
+  console.log(props)
+  return (
+  <div class="profile">
+  <div class="description">
+    <img
+      src={props.src}
+      alt="User avatar"
+      class="avatar"
+    />
+    <p class="name">Petra Marica</p>
+    <p class="tag">@pmarica</p>
+    <p class="location">Salvador, Brasil</p>
+  </div>
+  
+  <ul class="stats">
+    <li>
+      <span class="label">Followers</span>
+      <span class="quantity">{user.stats.followers}</span>
+    </li>
+    <li>
+      <span class="label">Views</span>
+      <span class="quantity">{user.stats.views}</span>
+    </li>
+    <li>
+      <span class="label">Likes</span>
+      <span class="quantity">{user.stats.likes}</span>
+    </li>
+  </ul>
+  </div>
+  );
+}
 
-<ul class="stats">
-  <li>
-    <span class="label">Followers</span>
-    <span class="quantity">{user.stats.followers}</span>
-  </li>
-  <li>
-    <span class="label">Views</span>
-    <span class="quantity">{user.stats.views}</span>
-  </li>
-  <li>
-    <span class="label">Likes</span>
-    <span class="quantity">{user.stats.likes}</span>
-  </li>
-</ul>
-</div>)
 
-ReactDOM.render(element, document.querySelector('#root'))
+
+ReactDOM.render(<Used src={user.avatar}/>, 
+document.querySelector('#root'))
