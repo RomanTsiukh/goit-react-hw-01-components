@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Profile(props) {
+export function Profile(props) {
     console.log(props)
     const { link, usname, ustag, locat, folowers, views, likes } = props
     return (
@@ -43,4 +43,3 @@ export default function Profile(props) {
     views: PropTypes.number,
     likes: PropTypes.number,
   };
-  
