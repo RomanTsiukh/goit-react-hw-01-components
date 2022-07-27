@@ -1,4 +1,3 @@
-import data from 'components/Statistics/data.json';
 import { Statistics } from 'components/Statistics/Statistics';
 
 export function StatisticsList(props) {
