@@ -1,23 +1,7 @@
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
-
-
 import Profile from './Profile'
+import Statistics from './Statistics'
 import user from '../user';
+import data from '../data';
 
 export default function App() {
     return(
@@ -31,6 +15,32 @@ export default function App() {
           views={user.stats.views}
           likes={user.stats.likes}
         />
+        {data.map(dat => (
+        <Statistics 
+          key={dat.id} 
+          lab={dat.label}
+          percent={dat.percentage}
+                />
+        ))}
+
     </div>
-    )
-  }
+
+    );
+  };
+
+
+
+// import Statistics from './Statistics'
+// import data from '../data';
+
+// export default function Appp() {
+//   return(
+//     <div>
+      // <Statistics 
+      //   link={user.avatar} 
+      //   usname={user.username}
+      //   ustag={user.tag}
+      // />
+//   </div>
+//   );
+// };

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Profile(props) {
     console.log(props)
     const { link, usname, ustag, locat, folowers, views, likes } = props
@@ -30,4 +32,15 @@ export default function Profile(props) {
     </ul>
     </div>
     );
-  }
+  };
+
+  Profile.propTypes = {
+    link: PropTypes.string,
+    usname: PropTypes.string,
+    ustag: PropTypes.string,
+    locat: PropTypes.string,
+    folowers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  };
+  
