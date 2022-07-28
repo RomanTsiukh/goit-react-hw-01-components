@@ -1,5 +1,4 @@
 import PropTypess from 'prop-types';
-// import data from 'components/Statistics/data.json';
 
 export function Statistics(props) {
     const { lab, percent } = props;
