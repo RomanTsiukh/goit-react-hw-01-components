@@ -1,4 +1,4 @@
-import PropTypess from 'prop-types';
+import PropTypes from 'prop-types';
 
 export function Statistics(props) {
     const { lab, percent } = props;
@@ -10,7 +10,7 @@ export function Statistics(props) {
     )}
 
 Statistics.propTypes = {
-    id: PropTypess.string,
-    lab: PropTypess.string,
-    percent: PropTypess.number,
+    id: PropTypes.string,
+    lab: PropTypes.string,
+    percent: PropTypes.number,
   };

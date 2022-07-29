@@ -19,13 +19,11 @@ export function StatisticsList(props) {
             ))}
             </ul>
         </section>
-    )}
+    )};
 
     StatisticsList.propTypes = {
         stats: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.string.isRequired
             })
-        )
-    }
-    
+        )};
