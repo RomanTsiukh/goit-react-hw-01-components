@@ -24,8 +24,8 @@ export function TransactionHistory(props) {
         </table>
     )};
 
-    TransactionHistory.propTypes = {
-        items: PropTypes.arrayOf(
-            PropTypes.objectOf(PropTypes.string)
-        )
-    }
+    
+TransactionHistory.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.objectOf(PropTypes.string)
+    )};

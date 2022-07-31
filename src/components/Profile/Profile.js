@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './Profile.module.css'
 
 export function Profile(props) {
     console.log(props)
     const { link, usname, ustag, locat, folowers, views, likes } = props
     return (
-    <div class="profile">
+    <div className={css.profile}>
     <div class="description">
       <img
         src={link}
