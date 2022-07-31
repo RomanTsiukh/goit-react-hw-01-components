@@ -1,0 +1,54 @@
+.transactionHistory{
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    width: 350px;
+    border-collapse: collapse;
+    /* border: 1px solid rgb(249, 246, 246); */
+    text-align: center;
+
+    box-shadow: 0px 4px 12px 0px rgba(100, 99, 99, 0.75);
+
+    /* border-radius: 5px; */
+    /* overflow: hidden; */
+    outline: 2px solid rgb(249, 246, 246);
+}
+
+.thead {
+    background-color: rgb(114, 185, 229);
+    color: var(--third-text-color);
+    text-transform: uppercase;
+}
+
+.transaction__thead th:nth-child(1) {
+    width: 35%;
+}
+
+.transaction__thead th:nth-child(2) {
+    width: 30%;
+}
+
+.transaction__thead th:nth-child(3) {
+    width: 35%;
+}
+
+td, th, tr {
+    padding: 10px;
+    outline: 1px solid rgb(249, 246, 246);
+}
+
+tbody tr:nth-child(odd) {
+    background-color:var(--first-bg-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--second-bg-color);
+}
+
+tbody tr {
+    background-color: rgb(81, 255, 0);
+}
+
+.type {
+    text-transform: capitalize;
+}

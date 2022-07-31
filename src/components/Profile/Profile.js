@@ -6,29 +6,29 @@ export function Profile(props) {
     const { link, usname, ustag, locat, folowers, views, likes } = props
     return (
     <div className={css.profile}>
-    <div class="description">
+    <div className={css.description}>
       <img
         src={link}
         alt="User avatar"
-        class="avatar"
+        className={css.avatar}
       />
-      <p class="name">{usname}</p>
-      <p class="tag">@{ustag}</p>
-      <p class="location">{locat}</p>
+      <p className={css.name}>{usname}</p>
+      <p className={css.tag}>@{ustag}</p>
+      <p className={css.location}>{locat}</p>
     </div>
     
-    <ul class="stats">
-      <li>
-        <span class="label">Followers</span>
-        <span class="quantity">{folowers}</span>
+    <ul className={css.stats}>
+      <li className={css.stat}>
+        <span className={css.label}>Followers</span>
+        <span className={css.quantity}>{folowers}</span>
       </li>
-      <li>
-        <span class="label">Views</span>
-        <span class="quantity">{views}</span>
+      <li className={css.stat}>
+        <span className={css.label}>Views</span>
+        <span className={css.quantity}>{views}</span>
       </li>
-      <li>
-        <span class="label">Likes</span>
-        <span class="quantity">{likes}</span>
+      <li className={css.stat}>
+        <span className={css.label}>Likes</span>
+        <span className={css.quantity}>{likes}</span>
       </li>
     </ul>
     </div>
