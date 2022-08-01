@@ -23,6 +23,7 @@ export function StatisticsList(props) {
     )};
 
     StatisticsList.propTypes = {
+        title: PropTypes.string,
         stats: PropTypes.arrayOf(
             PropTypes.shape({
                 id: PropTypes.string.isRequired

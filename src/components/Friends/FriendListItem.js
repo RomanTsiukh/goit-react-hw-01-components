@@ -12,7 +12,7 @@ export function FriendListItem(props){
     )};
 
 FriendListItem.propTypes = {
-    ava: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool,
+    ava: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
 };

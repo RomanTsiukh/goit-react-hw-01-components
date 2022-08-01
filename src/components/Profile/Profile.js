@@ -36,11 +36,11 @@ export function Profile(props) {
   };
 
   Profile.propTypes = {
-    link: PropTypes.string,
-    usname: PropTypes.string,
-    ustag: PropTypes.string,
-    locat: PropTypes.string,
-    folowers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    link: PropTypes.string.isRequired,
+    usname: PropTypes.string.isRequired,
+    ustag: PropTypes.string.isRequired,
+    locat: PropTypes.string.isRequired,
+    folowers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   };

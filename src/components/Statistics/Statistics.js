@@ -11,7 +11,6 @@ export function Statistics(props) {
     )}
 
 Statistics.propTypes = {
-    id: PropTypes.string,
     lab: PropTypes.string,
     percent: PropTypes.number,
   };
