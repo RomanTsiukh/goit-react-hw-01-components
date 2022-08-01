@@ -1,6 +1,6 @@
 import { Statistics } from 'components/Statistics/Statistics';
 import PropTypes from 'prop-types';
-import css from './Statistics.module.css'
+import css from './Statistics.module.css';
 
 export function StatisticsList(props) {
     const { title, stats } = props;
@@ -27,4 +27,5 @@ export function StatisticsList(props) {
             PropTypes.shape({
                 id: PropTypes.string.isRequired
             })
-        )};
+        )
+    };

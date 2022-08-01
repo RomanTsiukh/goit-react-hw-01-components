@@ -30,9 +30,7 @@
     color: var(--second-text-color);
 }
 
-.location {
-    color: var(--second-text-color);
-}
+.location {color: var(--second-text-color);}
 
 .stats {
     font-size: 20px;
